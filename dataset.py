@@ -41,7 +41,7 @@ restaurants = {"indian" : [["Krishna 13", "4.3/5", "$$-$$$", "Via Foscolo 13 Pia
                          ["La Casa Del Caffè Tazza d'Oro", "4.5/5", "$-$$$", "Via degli Orfani 84, Roma Italia"], 
                          ["Castroni", "4.5/5", "$$-$$$", "Via Cola di Rienzo 196, Roma Italia"], 
                          ["Antico Caffè della Pace", "4.5/5", "$-$$$", "Via della Pace 3/7, Roma Italia"], 
-                         ["Antico Caffè Greco", "4.5/5", "$-$$$" "Via dei Condotti 86, Roma Italia"]],
+                         ["Antico Caffè Greco", "4.5/5", "$-$$$", "Via dei Condotti 86, Roma Italia"]],
                "pizzeria" : [["Sforno", "4.5/5", "$$-$$$", "Via Statilio Ottato 110/116, Roma Italia"], 
                              ["La Gatta Mangiona", "4/5", "$$-$$$", "Via F.Ozanam 30-32, 00152 roma Italia"], 
                              ["Pizzeria Ciro Cascella", "4.4/5", "$$-$$$", "Viale Isacco Newton 68, 00151 Roma Italia"], 
