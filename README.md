@@ -51,8 +51,8 @@ restaurants = {
 ```
 
 - `categories` is a list of strings.
-- `restaurants` is a dictionary: key = category name (matching the entries in `categories`), value = list of tuples for each restaurant.
-- Each restaurant tuple should follow this order: (Name, Rating, Price, Address).
+- `restaurants` is a dictionary: key = category name (matching the entries in `categories`), value = list of list of each restaurant.
+- Each restaurant is a list that it should follow this order: (Name, Rating, Price, Address).
 
 Note: the script capitalizes the user's input with `.capitalize()`, so it's recommended that category names in `categories` start with an uppercase letter.
 
