@@ -30,6 +30,7 @@ class Recommadations:
 
     def start_use(self):
         self.greet()
+
         go_on = True
         while go_on:
             results = self.get_categories()
@@ -39,17 +40,33 @@ class Recommadations:
                     print(f"---> {item}")
             elif len(results) > 0:
                 print(f"The only option with those beginning letters is {results[0]}.")
-                choice = input(f"Do you want to look a {results[0]} restaurants? Enter 'y' for yes and 'n' for no:\n")
-                if choice == "y":
-                    # print(self.items[results[0]])
-                    print("\nThe best 5 restaurants in Rome for your choice are:\n")
-                    self.show_all_items(results[0].lower())
-                    again = input("\nDo you want find other restaurants? Enter 'y' for yes and 'n' for no:\n")
-                else:
-                    again = input("\nDo you want find other restaurants? Enter 'y' for yes and 'n' for no:\n")
 
-                if again == 'n':
-                    break
+                restorants_request = True
+                while restorants_request:
+                    choice = input(f"Do you want to look a {results[0]} restaurants? Enter 'y' for yes and 'n' for no:\n")
+                    if choice == "y":
+                        # print(self.items[results[0]])
+                        print("\nThe best 5 restaurants in Rome for your choice are:\n")
+                        self.show_all_items(results[0].lower())
+                    elif choice == 'n':
+                        ...   
+                    else:
+                        print("Please insert correct answer. Enter 'y' for yes and 'n' for no:\n")
+                        continue
+
+                    last_request = True
+                    while last_request:
+                        again = input("\nDo you want find other restaurants? Enter 'y' for yes and 'n' for no:\n")
+                        if again == 'n':
+                            restorants_request = False
+                            go_on = False
+                            break
+                        elif again == 'y':
+                            restorants_request = False
+                            break
+                        else:
+                            print("Please insert correct answer. Enter 'y' for yes and 'n' for no:\n")
+
             else:
                 print("I'm sorry...there is not categories with this letter on the database.!")
 
