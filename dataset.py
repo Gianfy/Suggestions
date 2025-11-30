@@ -1,5 +1,5 @@
 # categorie Chinese, Japanese, Indian, Persian, African, Osteria, Farmhouse, Café, Pizzeria
-categories = ['chinese', 'japanese', 'indian', 'persian', 'african', 'osteria', 'farmhouse', 'caffe', 'pizzeria']
+categories = ['Chinese', 'Japanese', 'Indian', 'Persian', 'African', 'Osteria', 'Farmhouse', 'Caffe', 'Pizzeria']
 
 restaurants = {"indian" : [["Krishna 13", "4.3/5", "$$-$$$", "Via Foscolo 13 Piazza Vittorio, 00185 Roma Italia"], 
                            ["Himalaya's Kashmir", "4.5/5", "$$-$$$", "Via Principe Amedeo 325/327 00185 Roma Italia"], 
