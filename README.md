@@ -92,8 +92,5 @@ To contribute:
 - Open a pull request with your changes.
 - Or open an issue first to discuss larger changes or new features.
 
-## License
-Add the license of your choice (e.g. MIT). If none is specified, consider adding a `LICENSE` file.
-
 Author: Gianfy
 
