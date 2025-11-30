@@ -30,7 +30,8 @@ class Recommadations:
 
     def start_use(self):
         self.greet()
-        while True:
+        go_on = True
+        while go_on:
             results = self.get_categories()
             if len(results) > 1:
                 print(f"\nThis is all categories in database with your beginning letters.")
