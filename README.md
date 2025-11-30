@@ -87,20 +87,6 @@ Address:  Via Roma 1, Rome
 ...
 ```
 
-## Notes on the code and suggestions
-This script is a simple demo/utility. Some points you may want to improve:
-
-- The class name has a typo: `Recommadations`. Consider renaming it to `Recommendations`.
-- The method `get_iems` likely has a typo (should be `get_items`) and currently returns a value that doesn't match its expected behavior; you can remove or fix it.
-- `show_all_items` is passed a key converted to lowercase (`results[0].lower()`), so ensure dictionary keys in `restaurants` match that casing or normalize keys inside the script.
-- Input validation is minimal (e.g. responses other than `y`/`n` are not handled). You could add robust validation and reprompting.
-- Consider adding a non-interactive mode (pass category as a CLI argument) to support automation and testing.
-
-If you want, I can:
-- prepare a corrected and slightly improved version of the script (fix typos, add input validation and case-insensitivity),
-- add a sample `dataset.py`,
-- or add CLI argument support and simple tests.
-
 ## Contributing
 To contribute:
 - Open a pull request with your changes.
