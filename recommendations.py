@@ -11,23 +11,26 @@ class Recommadations:
         self.items = items
         
 
-    # returns a list of categories starting from an initial letter choiced by user
+    # Returns a list of categories starting from an initial letter choiced by user
     def get_categories(self):
         letter = self.choice_category_by_user()
         while letter == "":
             letter = self.choice_category_by_user()
         return [element for element in self.categories if element.startswith(letter)]
 
-    # returns a list of element lists for each category inserted
+    # Returns a list of element lists for each category inserted
     def get_iems(self, category):
         return [self.items[category] for category in self.items]    
 
-    # asks the user to enter a letter to search for categories
+    # Asks the user to enter a letter to search for categories
     def choice_category_by_user(self):
         print("\nWhat type of food do you like to eat?")
         letter = input("Enter the beginning letters of the categories of food you want to choose: \n")
         return letter.capitalize()
 
+
+    # This method starts the application and generates all the logic.
+    # There are three while True loops, the two internal ones are used to handle yes or not responses and any errors.
     def start_use(self):
         self.greet()
 
@@ -70,6 +73,7 @@ class Recommadations:
             else:
                 print("I'm sorry...there is not categories with this letter on the database.!")
 
+    # Print the restaurant request for the chosen category
     def show_all_items(self, key):
         
         for item in self.items[key]:
@@ -79,7 +83,7 @@ class Recommadations:
             print("Price:   {0}".format(item[2]))
             print("Address:  {0}".format(item[3]))
             
-    # it simply welcomes the user who is using the app
+    # It simply welcomes the user who is using the app
     def greet(self):
         print("*********************************************************")
         print("* Welcome to our restaurat's recommadatios app for Rome *")
